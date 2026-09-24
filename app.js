@@ -117,3 +117,37 @@ const basicCalculator = (x,y,z) => {
     else return "Error"
 }
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+
+/*Exercise 10: calculateGrade()
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+Example: calculateGrade(100) should return A.
+Complete the exercise in the space below:*/
+
+const calculateGrade = (x) => {
+  if(x>=90) return "A"
+    else if (x>=80) return "B"
+    else if (x>=70) return "C"
+    else if (x>=60) return "D"
+    else return "F"
+}
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+/* Exercise 11: createUsername()
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+Complete the exercise in the space below:*/
+const createUsername = (string1,string2) => {
+  let z=string1.len + string2.len;
+  let d=string1.slice(0,3)+ string2.slice(0,3);
+  return `${d} ${z}`;
+}
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
